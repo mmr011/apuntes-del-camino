@@ -1,0 +1,41 @@
+---
+import HamburgerIcon from '../assests/hamburger.svg';
+---
+<div class="navbar bg-neutral shadow-sm">
+
+  <div class="navbar-start">
+
+    <div class="btn btn-ghost text-xl">
+      <a href="/">Apuntes del camino</a>
+    </div>
+
+  </div>
+
+  <div class="navbar-end">
+
+    <!-- Show horizontal menu on larger screens -->
+    <div class="hidden lg:flex">
+      <ul class="menu menu-horizontal">
+        <li><a href="">Sobre mí</a></li>
+        <li><a href="">Artículos</a></li>
+        <li><a href="">Recomendados</a></li>
+        <li><a href="">Contáctos</a></li>
+      </ul>
+    </div>
+
+    <!-- Show burger menu on smaller screens -->
+    <div class="dropdown dropdown-end" >
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <HamburgerIcon />
+      </div>
+
+      <ul class="menu menu-sm dropdown-content bg-base-300 rounded-box shadow">
+        <li><a class="font-semibold" href="">Sobre mí</a></li>
+        <li><a class="font-semibold" href="">Artículos</a></li>
+        <li><a class="font-semibold" href="">Recomendados</a></li>
+        <li><a class="font-semibold" href="">Contáctos</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
