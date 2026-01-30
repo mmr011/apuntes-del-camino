@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+};
+
+const {title = 'Apuntes del camino', description = 'Blog Personal' } = Astro.props;
+---
+<!doctype html/>
+
+<html lang="en" data-theme="abyss">
+	<head>
+    <BaseHead title={title} description={description}/>
+	</head>
+	<body>
+		<h1>Astro</h1>
+    <div class="container mx-auto grid grid-cols-1 justify-items-center">
+      <slot />
+    </div>
+	</body>
+</html>
