@@ -1,0 +1,47 @@
+---
+import BannerBackgroundImage from '../assests/banner-bg.png';
+---
+
+<div class="hero bg-base-200 min-w-screen bg-cover lg:bg-center"
+  style={`background-image: url(${BannerBackgroundImage.src})`}>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content w-full text-neutral-content text-start py-8">
+
+    <!-- Show horizontal menu on larger screens -->
+    <div class="hidden lg:w-5xl lg:flex lg:items-end lg:justify-between">
+
+      <div class="max-w-md">
+        <h1 class="mt-5 text-5xl font-bold">Apuntes del camino</h1>
+        <p class="mt-5 text-xs font-extralight">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      </div>
+
+      <div class="mt-5">
+        <ul class="menu menu-horizontal">
+          <li><a href="">Sobre mí</a></li>
+          <li><a href="">Artículos</a></li>
+          <li><a href="">Recomendados</a></li>
+          <li><a href="">Contáctos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lg:hidden w-full flex items-end justify-between">
+
+      <div class="max-w-md">
+        <h1 class="mt-5 text-5xl font-bold">Apuntes del camino</h1>
+        <p class="mt-5 text-xs"></p>
+      </div>
+
+      <div class="mt-5">
+        <ul class="menu menu-horizontal">
+          <li><a href="">Contáctos</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
